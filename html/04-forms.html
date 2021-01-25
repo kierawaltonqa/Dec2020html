@@ -13,25 +13,28 @@
     <!-- GET = Arguments are appended to the URL of the request -->
     <!-- POST = info is sent in the body of the request -->
     <form method="GET" action="">
-        <label>Enter your username:</label>
-        <input type="text" name="username" required />
-        <br />
-        <label>Enter your password:</label>
-        <input type="password" name="pwd" />
-        <br />
-        <label>Enter your email:</label>
-        <input type="email" name="email" />
-        <br />
-        <label>Enter your phone number:</label>
-        <input type="tel" name="tel" value=123456789 pattern="[0-9]{11,13}" />
-        <br />
-        <label>URL of company you work at:</label>
-        <input type="url" name="url" />
-        <br />
-        <label>Gender:</label>
-        <input type="radio" id="male" name="gender">Male </input>
-        <input type="radio" id="male" name="gender">Female </input>
-        <br />
+        <fieldset>
+            <legend>Personal Info:</legend>
+            <label>Enter your username:</label>
+            <input type="text" name="username" required />
+            <br />
+            <label>Enter your password:</label>
+            <input type="password" name="pwd" />
+            <br />
+            <label>Enter your email:</label>
+            <input type="email" name="email" />
+            <br />
+            <label>Enter your phone number:</label>
+            <input type="tel" name="tel" value=123456789 pattern="[0-9]{11,13}" />
+            <br />
+            <label>URL of company you work at:</label>
+            <input type="url" name="url" />
+            <br />
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender">Male </input>
+            <input type="radio" id="male" name="gender">Female </input>
+            <br />
+        </fieldset>
         <label>What food do you like?</label>
         <input type="checkbox">Chicken</input>
         <input type="checkbox">KFC</input>
