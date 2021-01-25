@@ -1,0 +1,15 @@
+/* 
+ID = # 
+Class = .
+*/
+
+#name{
+    color: blueviolet;
+    background-color: cornflowerblue;
+}
+.lorem{
+    font-size: 50px;
+}
+
+/* looks for paragraph with class lorem*/
+/* p.lorem{} */
