@@ -4,30 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Selection Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <h1>Welcome To QA Cinemas!</h1>
-    </header>
-    <fieldset>
-        <nav>
-            <h2>Please select an option:</h2>
-            <ul>
-                <li>
-                    <a href="./homepage.html">About Us</a>
+    <nav class="navbar navbar-light bg-light">
+        <a href="link/to/page" class="navbar-brand">QA Cinemas</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#hasToMatch">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="hasToMatch">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="./selection.html" class="nav-link">Home</a>
                 </li>
-                <li>
-                    <a href="schedule.html">Cinema Schedule</a>
+                <li class="nav-item">
+                    <a href="./signup.html" class="nav-link">Sign Up</a>
                 </li>
-                <li>
-                    <a href="signup.html">Sign Up</a>
+                <li class="nav-item">
+                    <a href="./schedule.html" class="nav-link">Schedule</a>
                 </li>
             </ul>
-        </nav>
-    </fieldset>
+        </div>
+    </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-xl">
+                <div class="alert alert-primary">
+                    <header>
+                        <h2>About QA Cinemas</h2>
+                    </header>
+                    <p>Welcome to QA Cinemas website! On this website you will find information about the films we are
+                        showing and the schedule detailing the times and dates these films are showing! The prices of
+                        tickets vary depending on the day and your age, and we have special discounts available for
+                        students and groups.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="alert alert-primary">
+                    <header>
+                        <h4>Contact Details</h4>
+                        <ol>
+                            <li>Call us on: 01937 854762</li>
+                            <li>Email us via: </li>
+                        </ol>
+                    </header>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="alert alert-primary">
+                    <h4>Ticket Prices and Deals at QA Cinemas:</h4>
+                    <ul>
+                        <li>Student Deals:
+                            <ol>
+                                <li>10% off tickets all the time</li>
+                                <li>2 tickets for the price of 1 on Wednesdays</li>
+                                <li>50% off snacks on Fridays</li>
+                            </ol>
+                        </li>
+                        <li>Children under the age of 3 can go for free</li>
+                        <li>Children under the age of 12 pay half</li>
+                        <li>Parties of 6 or more get 20% off total ticket price</li>
+                        <li>25% off on Thursday's for everyone!</li>
+                    </ul>
+                    <div class="container">
+
+                        <!-- button to show the modal -->
+                        <button type="btn" class="btn btn-dark" data-toggle="modal" data-target="#firstModal">Weekday
+                            Prices</button>
+
+                        <!-- Create the modal itself -->
+                        <div class="modal" id="firstModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title">Ticket prices Monday-Thursday
+                                        </h2>
+                                        <button type="button" data-dismiss="modal" class="btn btn-danger">
+                                            <span>X</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Daytime Film Showings: £6 per ticket</li>
+                                            <li>Evening Film Showings: £8 per ticket</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" data-dismiss="modal"
+                                            class="btn btn-success">Close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="container">
+
+                        <!-- button to show the modal -->
+                        <button type="btn" class="btn btn-dark" data-toggle="modal" data-target="#firstModal">Weekend
+                            Prices</button>
+
+                        <!-- Create the modal itself -->
+                        <div class="modal" id="firstModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title">Ticket prices Friday-Sunday
+                                        </h2>
+                                        <button type="button" data-dismiss="modal" class="btn btn-danger">
+                                            <span>X</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Daytime Film Showings: £10 per ticket</li>
+                                            <li>Evening Film Showings: £15 per ticket</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" data-dismiss="modal"
+                                            class="btn btn-success">Close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
