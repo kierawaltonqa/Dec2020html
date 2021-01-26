@@ -14,12 +14,12 @@ a:active {
 /* look for an exact match */
 img[src="../resources/monkey.jpeg"] {
     width: 500px;
-    height: 500px;
+    height: 400px;
 
 }
 /* find an element that ends with a specific value */
 [src$=".png"] {
-    height: 400px;
+    height: 100px;
 }
 /* starts with = ^= */
 a[href^="mailto"] {
