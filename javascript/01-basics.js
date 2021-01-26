@@ -47,5 +47,5 @@ console.log(str2); // 5 + 3 = 8
 let string = `5 + 3 = ${5 + 3}`;
 console.log(string);
 
-console.log(`quote:"" single:''`);
-console.log("quote:\"\" single:''");
+console.log(`quote:"" single:''`); //nicer way
+console.log("quote:\"\" single:''"); //escaping characters
