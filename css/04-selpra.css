@@ -1,0 +1,23 @@
+/* adding color to the element */
+em{
+    color: blue;
+}
+/* descendent combinator */
+p em{
+    color:red;
+}
+/* Direct child relationships*/
+header > h1 {
+    color:limegreen;
+}
+body > footer {
+    color: limegreen;
+}
+/* adjacent sibling combinator */
+p + blockquote {
+    color:purple;
+}
+/* all siblings */
+h1 ~ p {
+    background-color: grey;
+}

@@ -1,0 +1,43 @@
+/*Access id*/
+
+#myHeading{
+    font-size: 20px;
+}
+
+/*Access class */
+.center{
+    text-align: center;
+    color: crimson;
+}
+/*Access every element - can get overriden by more specific selector*/
+/* *{
+    text-align: end;
+    color:blueviolet;
+    font-size: 10px;
+} */
+
+/* Descendant = all descendants will be styles ( a child of) */
+
+ol li {
+    color:magenta;
+}
+/* Child selecot = > any DIRECT child */
+
+div > h1 {
+    color: brown;
+}
+
+/* Adjacent selectors = + ...siblings */
+/* only style the p if ol is a sibling straight before it */
+ol + p {
+    color:red;
+}
+
+/* preceding siblings - match all siblings of a selected element */
+
+h3 ~ p {
+    color: olive;
+}
+h4 ~ p {
+    color:yellow
+}
