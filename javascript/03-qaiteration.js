@@ -50,3 +50,22 @@ switch (day) {
         console.log("not a day")
         break;
 }
+let now = new Date().getDay();
+switch (now) {
+    case 0:
+        console.log(`sunday`);
+        break;
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        console.log(`its a weekday`);
+        break;
+    case 6:
+        console.log(`its saturday`);
+        break;
+    default:
+        console.log(`dont know the day`);
+        break;
+}
