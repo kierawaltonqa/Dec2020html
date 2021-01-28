@@ -13,11 +13,12 @@
 <body>
     <!-- Method = GET and POST -->
     <!-- Action = Where we send the information (a server location) -->
+
     <div class="container">
         <header>
             <h1 class="text-center">Register</h1>
         </header>
-        <form action="" method="">
+        <form action="wwww.api.com/server.py" method="GET">
             <div class="row">
                 <div class="col-md">
                     <label class="form-check-label">Username:</label>
@@ -36,23 +37,23 @@
             <div class="row">
                 <div class="col-md text-center">
                     <br />
-                    <button type="submit" id="subbutt" class="btn btn-success">Submit Form</button>
+                    <button type="submit" id="subbutt" class="btn btn-success">Submit form</button>
                 </div>
             </div>
+        </form>
     </div>
-
-    </form>
-    </div>
-    <!-- PROBLEM HERE CHECK SAVS GITHUB-->
+    <!-- Scripts here -->
     <script>
-        let submitbutton = document.querySelector("subbutt");
+        let submitbutton = document.querySelector("#subbutt");
 
-        const preventSubmission = (event) => {
-            event.preventDefault();
-            console.log("hello");
+        const preventSubmision = (event) => {
+            event.preventDefault(); // stops the default behaviour
+            console.log("weehee we didn't go anywhere");
             window.location.href = "https://www.google.com";
         }
-        submitbutton.addEventListener("click", preventSubmission);
+
+        submitbutton.addEventListener("click", preventSubmision);
+
     </script>
     <!-- Scripts here -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
