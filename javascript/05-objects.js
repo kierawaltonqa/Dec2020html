@@ -69,3 +69,20 @@ let userData = `{"name":"kiera"}`
 console.log(typeof userData);
 let obj = JSON.parse(userData);
 console.log(typeof obj);
+
+//QA community exercises
+let darthVader = {
+    "allegiance": "empire",
+    "weapon": "lightsaber",
+    "sith": true
+};
+console.log(darthVader["allegiance"]);
+console.log(darthVader["weapon"]);
+console.log(darthVader["sith"]);
+
+let myArray = ["hello", "everyone"];
+console.log(myArray.length);
+myArray.push("kiera");
+myArray.push("is");
+myArray.push("my name");
+console.log(myArray.length);
