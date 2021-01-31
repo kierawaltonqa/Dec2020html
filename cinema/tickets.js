@@ -6,7 +6,7 @@ const number2 = document.querySelector("#quantity"); //15
 const result = document.querySelector("#result");
 const basket = document.querySelector(".basket");
 const multiplyButton = document.querySelector("#mult");
-//const addToBasket = document.querySelector("#pay");
+const clearBasket = document.querySelector("#clearHistory");
 
 
 // return the values entered by the user
@@ -30,6 +30,10 @@ const basket2 = (num1, num2, result) => {
     newBasket.appendChild(newText);
     basket.appendChild(newBasket);
 }
+//clear all values from basket 
+const basketClear = () => {
+    basket.innerHTML = "";
+}
 
 multiplyButton.addEventListener("click", multiply);
-//addToBasket.addEventListener("click", basket2);
+clearBasket.addEventListener("click", basketClear);
