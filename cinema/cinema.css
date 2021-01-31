@@ -47,6 +47,12 @@ html, body {
     text-transform: uppercase;
     text-shadow: 2px 2px 10px #000;
 }
+.carousel-caption h5 {
+    font-size: 200%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+    top:25%;
+}
 .carousel-caption h3 {
     font-size: 200%;
     font-weight: 500;
@@ -122,3 +128,4 @@ hr.light-100 {
     margin-top:.8rem;
     margin-bottom:1rem;
 }
+

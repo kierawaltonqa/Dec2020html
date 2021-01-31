@@ -1,0 +1,13 @@
+body {
+    background-image: url("/resources/sign\ up\ background.jpg")
+}
+.col-12 h1 {
+    font-size: 500%;
+    color: white;
+    text-shadow: 1px 1px 10px #000;
+}
+#details {
+    font-size: 200%;
+    color: white;
+    text-shadow: 1px 1px 10px #000;
+}
